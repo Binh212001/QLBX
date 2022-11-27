@@ -268,6 +268,11 @@ public class VeXe extends javax.swing.JFrame {
         jButton4.setText("Lịch sử gửi xe");
 
         jButton5.setText("Back");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
 
         jButton7.setText("Frefesh");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
@@ -527,6 +532,12 @@ public class VeXe extends javax.swing.JFrame {
 // TODO add your handling code here:
         this.dispose();
     }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+         new  home().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
      * @param args the command line arguments
